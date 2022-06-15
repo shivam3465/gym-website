@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go fit.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+</head>
+<!-- <link rel="stylesheet" href="css codes/style.css"> -->
+<style>
+   /* css reset */
+  body{
+  /* this is for text color */
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('image/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+  }
+  .left{
+    display: inline-block;
+    /* border:4px solid yellowgreen;     */
+    position: absolute;
+    left: 34px;    
+    top: 12px;
+    width: 18%;
+    display: inline-block;
+  }
+  .left img{
+    width: 124px;
+  }
+  .left div{
+    text-align: right;
+    color: white;
+    font-size: 30px;
+  }
+  #title{
+    display:inline-block;
+    position: absolute;
+    bottom: 16px;
+    padding: 2px 17px;
+  }
+  .mid{
+    display: block;
+    width: 39%;
+    margin: 12px auto;
+    /* border:4px solid green; */
+  }
+  .right{
+    position: absolute;
+    right: 34px;
+    top: 12px;
+    display: inline-block;
+    /* border:4px solid yellow; */
+  }
+  .right button{
+    color: rgb(135 35 35);
+    margin: 20px 8px;
+    padding: 1px 8px;
+    font-size: 141%;
+    border-radius: 7px;
+    border-color: #b3ebf1;
+    background-color: #b3ebf1;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+  }
+  /* .right button #first{
+    right: 130px;
+  }
+  .right button #second{
+    right: 3px;
+  } */
+  .right button:hover{
+    background-color: #a9afe7;
+  }
+  ul{
+    padding-inline-start: 19px;
+  }
+  .navbar{
+    display: inline-block;
+  }
+  .navbar li{
+    display: inline-block;
+  }
+  .navbar li a{    
+    padding: 8px 18px;
+    padding-left: 0px;
+    color: #f36b08;
+    text-decoration: none;
+    font-size: 31px;
+  }
+  .navbar li a:hover ,.navbar li a.active{    
+    color: rgb(122 155 119);
+  }
+  .form{
+    border: 2px solid white;
+    margin: 50px 91px;
+    margin-right: 740px;
+    padding-left: 24px;
+  }
+  .form input{
+    margin: 15px 5px;
+    text-align: center;
+    display: block;
+    width: 90%;
+    border: 2px solid blue;
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 5px 4px;
+  }
+  #gender{
+    border: 2px solid blue;
+     border-radius: 9px;
+     padding: 7px;
+     width:92%;
+     margin-left:5px;  
+     text-align: center; 
+     font-size: 16px;
+     opacity: 0.85;
+     /* font-family: 'Baloo Bhaijaan 2', cursive; */
+   }
+  .form #submit{
+    color: rgb(28 16 16);
+    display: block;
+    margin: 23px 176px;
+    width: 24%;
+    padding: 1px 8px;
+    font-size: 123%;
+    border-radius: 7px;
+    border-color: #78aae7;
+    background-color: #78aae7;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+  }
+  .form #submit:hover{
+    background-color: turquoise;
+  }
+  h1{
+    margin: 10px 13px;
+    margin-right: 33px;
+    text-align: center;
+  }
+</style>
+<body>
+  <header class="header"> 
+    <!-- left div for logo -->
+    <div class="left">
+    <img src="image/logo.png" alt="">
+    <div id="title">Go Fit.</div>
+    </div>
+    <!-- mid div for buttons -->
+    <div class="mid">
+    <ul class="navbar">
+      <li><a href="#" class="active">Menu</a></li>
+      <li><a href="#" >About Us</a> </li>
+      <li><a href="#" >Contact Us</a> </li>
+      <li><a href="#" >Query</a> </li>
+    </ul>
+    </div>
+    <!-- right div for search bars ,etc. -->
+    <div class="right">
+    <button>Email Us</button>
+    <button>Contact Us</button>
+    </div>
+    <div class="form">
+      <h1>Join The Best GYM</h1>
+      <form action="backend.php">
+        <div class="input">
+          <input type="text" placeholder="Enter Your Name">
+        </div>
+        <div class="input">
+          <input type="number" placeholder="Enter Your Age">
+        </div>        
+        <div class="input">
+          <input type="email" placeholder="Enter your Email Id">
+        </div>
+        <div class="number">
+          <input type="text" placeholder="Enter Your Mobile Number">
+        </div>
+        <div class="input">         
+          <select name="" class="input" id="gender">
+           <option value="none">select your gender</option>
+           <option value="male">male</option>
+           <option value="female">female</option>
+         </select>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+      
+  </header>
+  
+</body>
+</html>
